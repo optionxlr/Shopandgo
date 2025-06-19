@@ -1,0 +1,13 @@
+{
+    "workbench.editor.alwaysShowEditorActions": true,
+    "workbench.editor.defaultBinaryEditor": "notebookOutputEditor",
+    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+    "workbench.editor.editorActionsLocation": "default",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.preferHistoryBasedLanguageDetection": true,
+    "workbench.editor.preventPinnedEditorClose": "mouse",
+    "workbench.editor.sharedViewState": true,
+    "workbench.editor.splitInGroupLayout": "vertical",
+    "workbench.editor.splitSizing": "distribute",
+    "workbench.editor.titleScrollbarSizing": "large"
+}
