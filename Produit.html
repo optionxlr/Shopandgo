@@ -1,0 +1,82 @@
+---
+title: Shopandgo
+theme: minima
+layout: none
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopandgo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #4B0000;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .product {
+      background-color: #5e0000;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00000088;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .description {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .neon-bar {
+      height: 5px;
+      background: #00faff;
+      box-shadow: 0 0 12px #00faff, 0 0 24px #00faff;
+      margin-top: 8px;
+      border-radius: 3px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; padding: 30px;">Bienvenue sur Shopandgo</h1>
+
+  <div class="container">
+    {% for i in (1..24) %}
+    <div class="product">
+      <a href="#">
+        <div class="description">Produit {{ i }} - Titre simple</div>
+        <img src="https://via.placeholder.com/300x200?text=Produit+{{ i }}" alt="Produit {{ i }}">
+        <div class="neon-bar"></div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
