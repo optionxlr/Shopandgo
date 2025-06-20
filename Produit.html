@@ -1,3 +1,14 @@
+<header>
+  <div class="navbar">
+    <div class="logo">Shopandgo</div>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Produits</a>
+      <a href="#">Panier</a>
+      <a href="#">Connexion</a>
+    </nav>
+  </div>
+</header>
 ---
 title: Shopandgo
 theme: minima
@@ -9,8 +20,79 @@ layout: none
 <head>
   <meta charset="UTF-8">
   <title>Shopandgo</title>
-  <style>
+  <style>header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(20, 0, 0, 0.8);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 2px 12px #00000060;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #ffffffdd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #00faff;
+}
+
+body {
+  padding-top: 80px; /* Pour que le header ne cache pas le contenu */
+}
+
+footer {
+  background: #1a0000;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 50px;
+  border-top: 1px solid #440000;
+}
+
+footer a {
+  color: #00faff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
     body {
+      <footer>
+  <p>© 2025 Shopandgo. Tous droits réservés.</p>
+  <p>
+    <a href="#">Mentions légales</a> |
+    <a href="#">Contact</a> |
+    <a href="#">Instagram</a>
+  </p>
+</footer>
       margin: 0;
       padding: 0;
       background-color: #4B0000;
