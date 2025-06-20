@@ -1,0 +1,141 @@
+import os
+import json
+
+# Charger les données produit
+with open('produits.json', 'r', encoding='utf-8') as f:
+    produits = json.load(f)
+
+# Créer dossier site principal
+os.makedirs("site", exist_ok=True)
+
+# Générer les pages individuelles
+liens_html = ""
+
+for produit in produits:
+    dossier = f"site/produit{produit['id']}"
+    os.makedirs(dossier, exist_ok=True)
+    
+    # Page individuelle
+    contenu = f"""<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>{produit['titre']}</title>
+  <style>
+    body {{
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #4B0000;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }}
+    img {{
+      width: 300px;
+      border-radius: 10px;
+    }}
+    .box {{
+      background: #5e0000;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 12px #00000088;
+      display: inline-block;
+    }}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>{produit['titre']}</h1>
+    <img src="{produit['image']}" alt="{produit['titre']}">
+    <p>{produit['description']}</p>
+    <h3>Prix : {produit['prix']}</h3>
+  </div>
+</body>
+</html>"""
+
+    with open(f"{dossier}/index.html", "w", encoding="utf-8") as f:
+        f.write(contenu)
+
+    # Lien pour la page d'accueil
+    liens_html += f"""
+    <div class="product">
+      <a href="produit{produit['id']}/">
+        <div class="description">{produit['titre']}</div>
+        <img src="{produit['image']}" alt="{produit['titre']}">
+        <div class="neon-bar"></div>
+      </a>
+    </div>
+    """
+
+# Générer le fichier index.html principal
+index_page = f"""<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopandgo</title>
+  <style>
+    body {{
+      margin: 0;
+      padding: 0;
+      background-color: #4B0000;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }}
+
+    .container {{
+      max-width: 1200px;
+      margin: 60px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }}
+
+    .product {{
+      background-color: #5e0000;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00000088;
+      transition: transform 0.3s ease;
+    }}
+
+    .product:hover {{
+      transform: scale(1.03);
+    }}
+
+    .product img {{
+      width: 100%;
+      border-radius: 10px;
+    }}
+
+    .description {{
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }}
+
+    .neon-bar {{
+      height: 5px;
+      background: #00faff;
+      box-shadow: 0 0 12px #00faff, 0 0 24px #00faff;
+      margin-top: 8px;
+      border-radius: 3px;
+    }}
+
+    h1 {{
+      text-align: center;
+      padding: 40px 0;
+    }}
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur Shopandgo</h1>
+  <div class="container">
+    {liens_html}
+  </div>
+</body>
+</html>"""
+
+with open("site/index.html", "w", encoding="utf-8") as f:
+    f.write(index_page)
+
+print("✅ Toutes les pages produits et l'index global ont été générés.")
