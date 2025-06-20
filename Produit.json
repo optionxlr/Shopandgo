@@ -1,1 +1,18 @@
 
+[
+  {
+    "id": 1,
+    "titre": "Montre Galactique",
+    "image": "https://via.placeholder.com/300x200?text=Montre+Galactique",
+    "description": "Une montre futuriste pour les esprits cosmiques.",
+    "prix": "49.99$"
+  },
+  {
+    "id": 2,
+    "titre": "Sac Éclipse",
+    "image": "https://via.placeholder.com/300x200?text=Sac+Éclipse",
+    "description": "L’élégance noire de l’espace pliée dans un sac.",
+    "prix": "89.00$"
+  }
+  // etc.
+]
