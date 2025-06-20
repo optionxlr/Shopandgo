@@ -1,4 +1,127 @@
-
+[
+  {
+    "id": 1,
+    "titre": "Clé USB Holographique 128 Go",
+    "image": "https://via.placeholder.com/300x200?text=USB+Holographique",
+    "description": "Une clé USB futuriste avec affichage holographique lumineux et transfert ultra-rapide.",
+    "prix": "29.90$"
+  },
+  {
+    "id": 2,
+    "titre": "Station de Charge Magnétique 6-en-1",
+    "image": "https://via.placeholder.com/300x200?text=Charge+6-en-1",
+    "description": "Rechargez iPhone, Apple Watch, AirPods et plus encore sur une seule base magnétique élégante.",
+    "prix": "59.90$"
+  },
+  {
+    "id": 3,
+    "titre": "Carte Son Externe Haute Résolution USB-C",
+    "image": "https://via.placeholder.com/300x200?text=Carte+Son+USB-C",
+    "description": "Améliorez instantanément la qualité audio de votre laptop ou tablette grâce à ce DAC nomade.",
+    "prix": "44.00$"
+  },
+  {
+    "id": 4,
+    "titre": "Lampe LED Pliante Solaire",
+    "image": "https://via.placeholder.com/300x200?text=Lampe+Solaire+LED",
+    "description": "Parfaite pour le camping, les coupures ou le bureau : autonomie 48h et recharge solaire.",
+    "prix": "26.50$"
+  },
+  {
+    "id": 5,
+    "titre": "Mini Projecteur Wi-Fi Full HD",
+    "image": "https://via.placeholder.com/300x200?text=Mini+Projecteur+HD",
+    "description": "Transformez n’importe quel mur en cinéma personnel avec ce projecteur compact et connecté.",
+    "prix": "89.99$"
+  },
+  {
+    "id": 6,
+    "titre": "Souris Verticale Érgonomique Rechargeable",
+    "image": "https://via.placeholder.com/300x200?text=Souris+Érgonomique",
+    "description": "Design vertical pour soulager le poignet, autonomie 30 jours, connexion sans fil.",
+    "prix": "35.00$"
+  },
+  {
+    "id": 7,
+    "titre": "Ventilateur USB de Poche Ultra Silencieux",
+    "image": "https://via.placeholder.com/300x200?text=Ventilateur+USB",
+    "description": "À glisser dans la poche, idéal en été ou dans les transports, silencieux et puissant.",
+    "prix": "12.99$"
+  },
+  {
+    "id": 8,
+    "titre": "Hub USB-C 9 ports Aluminium",
+    "image": "https://via.placeholder.com/300x200?text=Hub+USB-C+9+Ports",
+    "description": "Étendez votre laptop avec 4 USB, HDMI, SD, Ethernet et audio – tout dans un boîtier métal.",
+    "prix": "49.00$"
+  },
+  {
+    "id": 9,
+    "titre": "Enceinte Bluetooth Lévitante",
+    "image": "https://via.placeholder.com/300x200?text=Enceinte+Lévitation",
+    "description": "Le son flotte littéralement en l’air grâce à une base magnétique anti-gravité futuriste.",
+    "prix": "129.90$"
+  },
+  {
+    "id": 10,
+    "titre": "Mini Clavier Rétroéclairé Sans Fil",
+    "image": "https://via.placeholder.com/300x200?text=Clavier+Mini+RGB",
+    "description": "Parfait pour media center, tablette ou voyage. Lumière RGB et touches silencieuses.",
+    "prix": "27.80$"
+  },
+  {
+    "id": 11,
+    "titre": "Boîtier de Refroidissement Téléphone Gamer",
+    "image": "https://via.placeholder.com/300x200?text=Cooling+Phone",
+    "description": "Évite la surchauffe en pleine session mobile grâce à son système Peltier + ventilo.",
+    "prix": "38.50$"
+  },
+  {
+    "id": 12,
+    "titre": "Lunettes Anti-Lumière Bleue Connectées",
+    "image": "https://via.placeholder.com/300x200?text=Lunettes+Tech",
+    "description": "Protégez vos yeux + affichez vos notifications discrètement via micro-écran latéral.",
+    "prix": "74.99$"
+  },
+  {
+    "id": 13,
+    "titre": "Caméra Espion Clé USB 1080p",
+    "image": "https://via.placeholder.com/300x200?text=USB+Caméra",
+    "description": "Clé USB avec caméra dissimulée, détection de mouvement et enregistrement automatique.",
+    "prix": "56.90$"
+  },
+  {
+    "id": 14,
+    "titre": "Boîte de Rangement Électronique Intelligente",
+    "image": "https://via.placeholder.com/300x200?text=Organiseur+Tech",
+    "description": "Un étui compartimenté avec Bluetooth tracker intégré pour ne plus jamais égarer vos câbles.",
+    "prix": "22.40$"
+  },
+  {
+    "id": 15,
+    "titre": "Chargeur Voiture Double USB + Allume-Cigare",
+    "image": "https://via.placeholder.com/300x200?text=USB+Voiture",
+    "description": "Chargez deux appareils tout en maintenant l’accès à l’allume-cigare. Puissant et compact.",
+    "prix": "14.90$"
+  },
+  {
+    "id": 16,
+    "titre": "Support Téléphone Voiture à Gravité",
+    "image": "https://via.placeholder.com/300x200?text=Support+Auto",
+    "description": "Se ferme automatiquement sous le poids du téléphone, rotation 360°, ultra stable.",
+    "prix": "16.80$"
+  },
+  {
+    "id": 17,
+    "titre": "Lampe Bureau LED avec Charge Induction",
+    "image": "https://via.placeholder.com/300x200?text=Lampe+Qi",
+    "description": "Éclairage directionnel, ports USB, minuterie et recharge sans fil intégrée.",
+    "prix": "49.90$"
+  },
+  {
+    "id": 18,
+    "titre": "Câble Multi-Connecteurs Magnétique 3-en-1",
+    "image": "https://via.placeholder.com/300x
 [
   {
     "id": 1,
